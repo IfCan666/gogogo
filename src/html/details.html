@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/details.css">
+    <link rel="stylesheet" href="../css/rest.css">
+
+</head>
+
+<body>
+
+    <!-- 头部 -->
+    <div class="head-nav">
+        <div class="logo">
+            <a href=""><img class="logo-img" alt="" src="../img/15607d35ca988e2064603b6007a0c5b7872dd627.jpg"></a>
+        </div>
+
+        <div class="nav-right">
+            <div class="on-nav">
+                <div class="the-left">
+                    <div class="the-left1">
+                        <a class="gfsc" href="">官方商城Shop</a>
+                        <div class="bottom-left">
+                            <div class="bottom-title">
+                                <a href="">全部商品</a>
+                            </div>
+
+                            <div class="bottom-title">
+                                <a href="">男式</a>
+                            </div>
+
+                            <div class="bottom-title">
+                                <a href="">女式</a>
+                            </div>
+
+                            <div class="bottom-title">
+                                <a href="">鞋类</a>
+                            </div>
+
+                            <div class="bottom-title">
+                                <a href="">装备配件</a>
+                            </div>
+
+                            <div class="bottom-title">
+                                <a href="">童装</a>
+                            </div>
+
+                            <div class="bottom-title">
+                                <a href="">科技</a>
+                            </div>
+
+                            <div class="bottom-title">
+                                <a href="">场景</a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="the-left2">
+                        <a href="" class="tsbm">探索北面Exploration</a>
+                    </div>
+
+                    <div class="the-left3">
+                        <a href="" class="vip"><span>VIP</span>eak</a>
+                    </div>
+                </div>
+
+                <div class="the-right">
+                    <div class="the-right-top">
+                        <div class="login-box">
+                            <div class="the-right1">
+                                <a href="">加入/登录VIPeak</a>
+                            </div>
+
+                            <div class="cartwrap">
+                                <div class="cart">
+                                    <a href="">
+
+                                        <img src="../img/cart.png">
+                                        <span class="num">0</span>
+                                    </a>
+                                </div>
+
+                                <div class="cart-dialog" style="display: none;">
+
+                                    <div class="closebtn"></div>
+                                    <div class="cartlist" style="display: none;">
+                                        <div class="listbox">
+                                        </div>
+
+                                        <div class="cart-d" id="cart_off">
+                                            <div class="d-all"><span id="allcount"></span><span id="allmoney"></span></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="the-none-ware">购物车中还没有商品,赶紧选购吧！</div>
+                                    <a href="" class="sub-cart">
+                                        <div>查看购物车</div>
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="the-right2">
+                            <a href="">
+                                <div>
+                                    <i class=""></i>门店查询
+                                </div>
+                            </a>
+                        </div>
+                        <div class="the-right3">
+                            <a>
+                                <div class="two-nav">
+                                    <i></i>手机商城
+                                    <div class="two-nav-img">
+                                        <div>
+                                            <img src="../img/175cf53820e1e7090dc82c0d2f95d87f03f43d22.png" alt="">
+                                        </div>
+                                        <p class="p-1 ">扫描二维码</p>
+                                        <p class=" p-2">浏览北面手机版</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="the-right4">
+                            <a>
+                                <div>
+                                    <img src="../img/cn.png" alt="">
+                                    <span> CN</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bottom-right">
+
+                    <div class="search-box">
+                        <a class="search-btn"><i class=""></i></a>
+                        <form action="/index.php/search-result.html" method="post" class="form-one">
+                            <input type="text" name="search_keywords" value="" placeholder="搜索商品" class="search">
+                            <input type="button" value="" class="btn-search">
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 这是导航下面的广播 -->
+    <ul class="broadcastBar">
+        <li>
+            <p>
+                <a href="">★官网商城购物订单满300元，即可享顺丰速运免费运送到家。</a>
+            </p>
+        </li>
+        <li>
+            <p>
+                <a href="">★购买放肆穿行系列产品，满990送运动折叠水壶，数量有限，赠完及止。</a>
+            </p>
+        </li>
+    </ul>
+
+
+    <!-- 中间的详情 -->
+    <div class="main-details">
+
+        <div class="small-title">
+            <a href="/index.php/gallery-2.html">服装</a> -
+            <a href="/index.php/gallery-13.html">儿童T恤</a>
+        </div>
+
+        <form id="cart_add_form" method="post" target="_dialog_minicart">
+            <input type="hidden" name="prepare_type" value="">
+            <input type="hidden" name="btype">
+            <input type="hidden" name="goods[goods_id]" value="1931">
+            <input type="hidden" name="goods[product_id]" value="14919">
+            <div class="product-left">
+                <!-- 商品相册 -->
+                <div class="product-on-1">
+                    <div class="product-on-2">
+
+                        <div class="product-img-pic">
+                            <a href="">
+                                <img src="https://img1.thenorthface.com.cn/public/images/15/cd/01/9c4cadcf2ad62109e6a6fbdb09a2c3a9cc1e13b8.jpg?1556004660#h" alt="">
+                            </a>
+                        </div>
+
+                        <!-- <div class="product-album-zoom"><a href="" title="点击查看大图">J</a></div> -->
+
+                    </div>
+                    <div class="left-product-bottom">
+                        <div class="left-product-btn">
+                            <a href=""></a>
+                        </div>
+                        <div class="ul-banner">
+                            <ul class="clearfix" style="width: 540px">
+                                <li class="">
+                                    <div class="li-banner-pic">
+                                        <a href=""><img src="https://img1.thenorthface.com.cn/public/images/15/cd/01/9c4cadcf2ad62109e6a6fbdb09a2c3a9cc1e13b8.jpg?1556004660#h"></a>
+                                    </div>
+                                </li>
+                                <li class="">
+
+                                    <div class="li-banner-pic">
+                                        <a href=""><img src="https://img1.thenorthface.com.cn/public/images/29/b2/31/dcbcd8c33512eb0c4d89ee998173a3a7ab66e2bb.jpg?1556004660#h"></a>
+                                    </div>
+                                </li>
+                                <li class="">
+
+                                    <div class="li-banner-pic">
+                                        <a href=""><img src="https://img1.thenorthface.com.cn/public/images/d5/2c/6a/193f9dcd132e714c9df7e8a4c496912c51b3f06f.jpg?1556004660#h"></a>
+                                    </div>
+                                </li>
+                                <li class="active">
+                                    <!-- <div class="li-banner-pic"><i class="below"></i></div> -->
+                                    <div class="li-banner-pic">
+                                        <a href=""><img src="https://img3.thenorthface.com.cn/public/images/7e/ef/2f/6c295d0546b0d31aa4562d372481eb7229bb0d37.jpg?1556004660#h"></a>
+                                    </div>
+                                </li>
+                                <!-- <li>
+                                    
+                                    <div class="li-banner-pic">
+                                        <a href="https://img3.thenorthface.com.cn/public/images/ff/e4/1a/6e076496622981928b4142233f42bd36a7062af5.jpg?1556004660#h" rel="op_product_zoom" rev="https://img2.thenorthface.com.cn/public/images/ff/e4/1a/6e076496622981928b4142233f42bd36a7062af5.jpg?1556004660#h"><img src="https://img2.thenorthface.com.cn/public/images/ff/e4/1a/6e076496622981928b4142233f42bd36a7062af5.jpg?1556004660#h" alt="" width="60" height="60"></a>
+                                    </div>
+                                </li> -->
+                            </ul>
+                        </div>
+                        <div class="right-product-btn">
+                            <a href="" class="icon"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="commodity-details-right">
+                <div class="commodity-details-top">
+                    <h1 class="commodity-details-title">
+
+                        TheNorthFace北面童装2019新款春季短袖衬衫男童舒适透气|3NMA
+                    </h1>
+
+                </div>
+                <p class="commodity-small-title">服装-儿童T恤</p>
+
+                <div class="commodity-detail-bottom">
+                    <div class="detail-price-commodity">
+                        <div class="price-box-1">
+                            <i class="red-price">
+                                <span >￥398.00</span>
+                            </i>
+                        </div>
+                        <div class="price-box-2">
+                            <i class="market-price "> 市场价 
+                                <span >￥398.00</span> 
+                            </i>
+                        </div>
+                        <div class="vip-box">
+                            <p>
+                                <img src="../img/vip-log.png">
+                                <a href="" class="underth">加入VIPeak</a>
+                            </p>
+
+                        </div>
+                    </div>
+
+                    <li class="collect ">
+
+                        <a href="">
+                            <span>收藏该商品</span>
+                        </a>
+
+                    </li>
+
+
+
+                    <div class="specification">
+                        <!-- 商品规格 -->
+                        <div class="specification-color">
+                            <div class="specification-title">
+                                颜色
+                                <span>
+                                        绿色 
+                                    </span>
+
+                            </div>
+
+                            <div class="specification-frame">
+                                <div class="">
+                                    <a href="">
+                                        <span class="spec_icon">
+
+                     <img src="../img/frame.jpg"alt="绿色">
+                                            </span>
+                                    </a>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="size-frame-box">
+
+                            <div class="size-frame-title">
+                                尺寸 <span>XXS </span>
+                            </div>
+                            <div class="size-frame-v">
+                                <div class="size-frame">
+                                    <a href="">
+                                        <span>XXS</span>
+                                    </a>
+                                </div>
+                                <div class="size-frame">
+                                    <a href="">
+                                        <span>XS</span>
+                                    </a>
+                                </div>
+                                <div class="size-frame">
+                                    <a href="">
+                                        <span>S</span>
+                                    </a>
+                                </div>
+                                <div class="size-frame">
+                                    <a href="">
+                                        <span>M</span>
+                                    </a>
+                                </div>
+                                <div class="size-frame">
+                                    <a href="">
+                                        <span>L</span>
+                                    </a>
+                                </div>
+                                <div class="size-frame">
+                                    <a href="">
+                                        <span>XL</span>
+                                    </a>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- tnf的加减商品 -->
+                        <div class="amount-box">
+                            <div class="amount-title">数量</div>
+                            <div class="amount-btn-box">
+
+                                <span class="add-subtract">-</span>
+                                <span class="input-box">
+                                        <input  name="goods[num]" value="1">
+                                        <input type="hidden" name="stock" value="">
+                                    </span>
+                                <span class="add-subtract">+</span>
+                                <span class="btn-right"></span>
+                            </div>
+                        </div>
+
+
+                        <button class="btn-purchase-left" type="submit">
+                            <span class="one">
+                                <span class="two">立即购买</span>
+                            </span>
+                        </button>
+                        <!-- 加入购物车 -->
+                        <div class="addshopping-cart">
+                            <div class="">
+                                <span class="action-addtocart">加入购物车</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </form>
+        <!-- <img src="/index.php/product-cron-1931.html" width="1" border="none" height="1" class="hide"> -->
+
+
+        <!-- <img src="https://img1.thenorthface.com.cn/public/images/15/cd/01/9c4cadcf2ad62109e6a6fbdb09a2c3a9cc1e13b8.jpg?1556004660#h" class="album-mid-image"><img src="https://img3.thenorthface.com.cn/public/images/29/b2/31/dcbcd8c33512eb0c4d89ee998173a3a7ab66e2bb.jpg?1556004660#h"
+        class="album-mid-image"><img src="https://img2.thenorthface.com.cn/public/images/d5/2c/6a/193f9dcd132e714c9df7e8a4c496912c51b3f06f.jpg?1556004660#h" class="album-mid-image"><img src="https://img3.thenorthface.com.cn/public/images/7e/ef/2f/6c295d0546b0d31aa4562d372481eb7229bb0d37.jpg?1556004660#h"
+        class="album-mid-image"><img src="https://img2.thenorthface.com.cn/public/images/ff/e4/1a/6e076496622981928b4142233f42bd36a7062af5.jpg?1556004660#h" class="album-mid-image"> -->
+    </div>
+
+
+    <div class="the-footer">
+        <div class="footer-top">
+            <div class='footer-box'>
+                <div class="footer-top-left">
+                    <div>
+                        <img src="../img/help-phone.png" alt="">
+                    </div>
+                    <div class="time">工作时间 : 周一至周日,9:00~22:00</div>
+                    <h1 class="number">400-890-7688</h1>
+                </div>
+
+                <div class="footer-top-right">
+                    <a><img src="../img/tnf.jpg" alt=""></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="right-nav">
+
+            <div class="service">
+                <div class="nav-background">
+                </div>
+                <a onclick="">
+                    <img src="../img/service.png" alt="">
+                </a>
+            </div>
+            <div class="wechat">
+                <div class="nav-background" id="wechat">
+                </div>
+                <a>
+                    <img src="../img/wechatgreen.png" alt="">
+                </a>
+                <div class="QR" style="display: none;">
+                    <div>
+                        <img src="../img/QR-1.png" alt="">
+                    </div>
+                    <p>扫描二维码</p>
+                    <p>关注北面官方微信</p>
+                </div>
+            </div>
+            <div class="wechat">
+                <div class="nav-background"></div>
+                <a href="">
+                    <img src="../img/wechat2.png" alt="">
+                </a>
+                <div class="QR" style="display: none;">
+                    <div>
+                        <img src="../img/QR-2.png" alt="">
+                    </div>
+                    <p>关注微信</p>
+                    <p>加入野练</p>
+                </div>
+            </div>
+            <div class="up">
+                <div class="nav-background">
+                </div>
+                <a href="">
+                    <img src="../img/up.png" alt="">
+                </a>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-fix-1">
+                <div class="footer-fix-2">
+                    <div class="footer-bottom-left">
+
+                        <ul class="shopping-guide">
+
+                            <div class="guide-title">
+                                <h3 class="big-guide">
+                                    官方商城
+                                </h3>
+                            </div>
+
+                            <li> <a href="">全部商品</a></li>
+                            <li> <a href="">男式</a></li>
+                            <li> <a href="">女式</a></li>
+                            <li> <a href="">鞋类</a></li>
+                            <li> <a href="">装备/配件</a></li>
+                            <li> <a href="">童装</a></li>
+                            <li> <a href="">科技</a></li>
+                            <li> <a href="">场景</a></li>
+                        </ul>
+
+                        <ul class="shopping-guide">
+
+                            <div class="guide-title">
+                                <h3 class="big-guide">
+                                    VIPeak
+                                </h3>
+                            </div>
+
+                            <li> <a href="">关于VIPeak</a></li>
+                            <li> <a href="">会员等级</a></li>
+                            <li> <a href="">会员权益</a></li>
+                            <li> <a href="">如何获得积分</a></li>
+                        </ul>
+
+                        <ul class="shopping-guide">
+
+                            <div class="guide-title">
+                                <h3 class="big-guide">
+                                    探索北面
+                                </h3>
+                            </div>
+
+                            <li> <a href="">探索行动</a></li>
+                            <li> <a href="">运动员</a></li>
+                            <li> <a href="">查找门店</a></li>
+                        </ul>
+
+                        <ul class="shopping-guide">
+
+                            <div class="guide-title">
+                                <h3 class="big-guide">
+                                    客户服务
+                                </h3>
+                            </div>
+
+                            <li> <a href="">购物流程</a></li>
+                            <li> <a href="">购物须知</a></li>
+                            <li> <a href="">退换货</a></li>
+                            <li> <a href="">支付方式</a></li>
+                            <li> <a href="">联系我们</a></li>
+                            <li> <a href="">免责声明</a></li>
+                            <li> <a href="">使用条款</a></li>
+                            <li> <a href="">注册协议</a></li>
+                        </ul>
+
+
+
+                    </div>
+                    <div class="footer-bottom-rigth">
+                        <div class="footer-qr-box">
+                            <div class="qr-l">
+
+                                <img src="../img/QR-1.png" alt="">
+                                <p class="t">扫一扫即刻关注</p>
+                                <p class="b">北面官方微信</p>
+
+                            </div>
+                            <div class="qr-r">
+                                <img src="../img/QR-2.png" alt="">
+                                <p class="t">扫一扫即刻关注</p>
+                                <p class="b">北面野练微信</p>
+                            </div>
+                        </div>
+                        <div class="weibo-wrap">
+                            <div class="weibo-on">
+                                <i class="fa fa-weibo" aria-hidden="true"></i> 欢迎关注北面官方微博
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bootm-bootm">
+                    <p>COPYRIGHT BY www.thenorthface.com.cn , ALL RIGHTS RESERVED . 威富服饰（中国）有限公司上海分公司 沪ICP备08104484号-6 沪公网安备 31010602000021号
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

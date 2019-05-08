@@ -1,0 +1,359 @@
+@charset "utf-8";
+@import "head";
+@import "footer";
+.main-details {
+    margin: 0 auto;
+    position: relative;
+    width: 1200px;
+    .small-title {
+        height: 30px;
+        line-height: 40px;
+        position: relative;
+        a {
+            color: #000;
+            font-size: 12px;
+        }
+    }
+}
+
+.product-left {
+    width: 452px;
+    float: left;
+    .product-on-2 {
+        width: 602px;
+        position: relative;
+        border: 1px solid #ddd;
+        .product-img-pic {
+            width: 600px;
+            height: 600px;
+            text-align: center;
+            line-height: 600px;
+            font-size: 0;
+            img {
+                max-width: 600px;
+                max-height: 600px;
+                height: auto;
+                width: auto;
+                vertical-align: middle;
+            }
+        }
+    }
+}
+
+.left-product-bottom {
+    width: 600px;
+    position: relative;
+    clear: left;
+    margin-top: 10px;
+    .ul-banner {
+        width: 568px;
+        margin: 0 16px;
+        padding-top: 5px;
+        overflow: hidden;
+        li {
+            padding: 1px;
+            margin: 0 4px;
+            float: left;
+        }
+    }
+}
+
+.li-banner-pic {
+    line-height: 88px;
+    font-size: 0;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    border: 1px solid #ddd;
+    overflow: hidden;
+    font-family: Arial;
+    display: block;
+    padding: 4px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 4px;
+    img {
+        max-height: 88px;
+        max-width: 88px;
+        vertical-align: middle;
+        display: inline;
+    }
+}
+
+.commodity-details-right {
+    float: right;
+    width: 560px;
+    background: #fff;
+    padding: 10px;
+    .commodity-details-top {
+        .commodity-details-title {
+            font-size: 24px;
+            margin-bottom: 0px;
+            height: 100%;
+            color: #333;
+            line-height: 24px;
+            font-weight: bold;
+        }
+    }
+    .commodity-small-title {
+        color: #8c8c8c;
+        margin-top: 1rem;
+        font-size: 16px;
+    }
+}
+
+.detail-price-commodity {
+    margin-top: 20px;
+    background: #f8f8f8;
+    .price-box-1 {
+        height: 76px;
+        border-bottom: 1px solid #eeeeee;
+        padding: 15px 25px;
+        .red-price {
+            font-size: 30px;
+            color: #e52d1d;
+            font-style: normal;
+            span {
+                display: inline-block;
+                min-height: 35px;
+            }
+        }
+    }
+    .price-box-2 {
+        height: 56px;
+        border-bottom: 1px solid #eeeeee;
+        padding: 15px 25px;
+        .market-price {
+            font-size: 16px;
+            color: #858585;
+            font-style: normal;
+            span {
+                text-decoration: line-through;
+            }
+        }
+    }
+    .vip-box {
+        height: 60px;
+        padding: 15px 25px;
+        p {
+            font-size: 16px;
+            img {
+                vertical-align: middle;
+                padding-right: 8px;
+            }
+            a {
+                font-size: 16px;
+                color: #858585;
+            }
+        }
+    }
+}
+
+.collect {
+    position: relative;
+    padding: 10px 0;
+    a {
+        display: block;
+        width: 120px;
+        border-radius: 0;
+        margin: 10px 0;
+        padding: 0;
+        color: #767676;
+        span {
+            display: block;
+            background: #f5f5f5;
+            border: 1px solid #ddd;
+            border-radius: 0;
+            padding-left: 0;
+            text-align: center
+        }
+    }
+}
+
+.specification {
+    font-size: 12px;
+    .specification-color {
+        margin-bottom: 15px;
+        .specification-title {
+            color: #c4c4c4;
+            line-height: 35px;
+            span {
+                color: #fd0000;
+            }
+        }
+    }
+}
+
+.specification-frame {
+    font-size: 0;
+    margin-top: -10px;
+    div {
+        display: inline-block;
+        margin-top: 10px;
+        margin-right: 10px;
+        cursor: pointer;
+        vertical-align: top;
+        span {
+            width: 70px;
+            padding: 0;
+            display: block;
+            min-width: 20px;
+            border: 1px solid #DDDDDD;
+            text-align: center;
+            font-size: 12px;
+            position: relative;
+            img {
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
+}
+
+.size-frame-box {
+    margin-bottom: 15px;
+    .size-frame-title {
+        color: #c4c4c4;
+        line-height: 35px;
+        span {
+            color: #fd0000;
+        }
+    }
+    .size-frame-v {
+        font-size: 0;
+        margin-top: -10px;
+    }
+    .size-frame {
+        display: inline-block;
+        margin-top: 10px;
+        margin-right: 10px;
+        cursor: pointer;
+        vertical-align: top;
+        a {
+            color: #767676;
+            span {
+                display: block;
+                width: 70px;
+                height: 40px;
+                line-height: 40px;
+                min-width: 20px;
+                border: 1px solid #DDDDDD;
+                text-align: center;
+                font-size: 12px;
+                position: relative;
+            }
+        }
+    }
+}
+
+.amount-box {
+    margin-bottom: 15px;
+    .amount-title {
+        color: #c4c4c4;
+        line-height: 35px;
+    }
+    .amount-btn-box {
+        display: flex;
+        flex: 1;
+        font-size: 0;
+        .add-subtract {
+            display: block;
+            border: 1px solid #e8e8e8;
+            text-align: center;
+            min-width: 50px;
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .input-box {
+            border-left: none;
+            border-right: none;
+            display: block;
+            border: 1px solid #e8e8e8;
+            text-align: center;
+            min-width: 50px;
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            font-size: 16px;
+            cursor: pointer;
+            input {
+                display: block;
+                border: none;
+                height: 100%;
+                width: 100%;
+                text-align: center;
+                outline: none;
+            }
+        }
+    }
+}
+
+.btn-purchase-left {
+    margin-right: 10px;
+    padding: 0;
+    width: 120px;
+    height: 40px;
+    float: left;
+    box-sizing: border-box;
+    display: inline-block;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background-color: transparent;
+    .one {
+        padding-left: 30px;
+        line-height: 2.5;
+        border: 1px solid #ccc;
+        background-color: #fff;
+        display: inline-block;
+        height: 100%;
+        font-size: inherit;
+        .two {
+            padding-left: 0;
+            padding-right: 30px;
+            border: 0 none;
+            background-color: transparent;
+        }
+    }
+}
+
+.addshopping-cart {
+    div {
+        margin-left: 0px;
+        width: 120px;
+        height: 38px;
+        padding: 0;
+        margin: 0;
+        float: left;
+        border: 0;
+        background: #fd0000;
+        color: #ffffff;
+        cursor: pointer;
+        display: inline-block;
+        font-size: 25px;
+        line-height: 70px;
+        text-align: center;
+        span {
+            font-size: 14px;
+            line-height: 38px;
+            margin: 0;
+            padding: 0;
+            vertical-align: top;
+            box-sizing: border-box;
+            border: 0;
+        }
+    }
+}

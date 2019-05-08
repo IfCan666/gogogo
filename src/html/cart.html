@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/cart.css">
+    <link rel="stylesheet" href="../css/rest.css">
+</head>
+
+<body>
+    <div class="center-container">
+        <div id="main-shopping">
+            <!-- 购物车开始 -->
+            <!-- 购物车步骤图 -->
+            <div class="main-shopping-top">
+                <table class="main-shopping-tb">
+                    <tbody>
+                        <tr>
+                            <td class="main-td-1">
+                                <span>
+                                    <i>1</i>购物车
+                                </span>
+                            </td>
+                            <td class="main-td-2">
+                                <i>2</i>填写和提交订单信息
+                            </td>
+                            <td class="main-td-3">
+                                <span>
+                                    <i>3</i>成功提交订单
+                                </span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- 购物车主体 -->
+            <div class="main-shopping-container">
+
+                <form method="post">
+                    <!-- 购物车内容 -->
+                    <table class="cart-main-tab">
+                        <thead class="wrap-tr-box">
+                            <tr>
+                                <th width="62">
+                                    <label>
+                                        <input type="checkbox" class="switch_cb_all" checked="checked">&nbsp;全选
+                                    </label>
+                                </th>
+                                <th style="width:350px;">商品</th>
+                                <th style="width:175px;">单价</th>
+                                <th style="width:175px;">数量</th>
+                                <th style="width:175px;">小计</th>
+                                <th style="width:193px;">操作</th>
+                            </tr>
+                        </thead>
+                        <!-- 购物车条目 -->
+
+                        <tbody class="choose-products">
+                            <!-- 主商品 -->
+                            <tr class="cart-product-last">
+                                <td class="td-check-box">
+                                    <input type="checkbox" class="checkout_cb" value="true" checked="checked">
+                                </td>
+
+                                <td class="p-info">
+                                    <div style="width:400px;">
+
+                                        <div class="p-pic">
+                                            <a href=""><img src="https://img3.thenorthface.com.cn/public/images/4c/2c/a3/12b1ec208c4b9ab38da59add80766caf0ca9eee3.jpg?1556004660#h" alt="TheNorthFace北面童装2019新款春季短袖衬衫男童舒适透气|3NMA">
+                                            </a>
+                                        </div>
+
+                                        <div class="p-two">
+                                            <div class="p-title">
+                                                <a href="">TheNorthFace北面童装2019新款春季短袖衬衫男童舒适透气|3NMA
+
+                                                </a>
+
+
+                                            </div>
+
+                                            <div class="p-spec">绿色&nbsp;&nbsp;XXS</div>
+
+                                        </div>
+                                        <!-- 赠品 -->
+                                        <!-- 订单促销 -->
+                                    </div>
+                                </td>
+                                <!-- 原价现价处理 -->
+                                <td class="p-price" style="padding-top:45px;">
+                                    <p>￥398.00</p>
+
+                                </td>
+
+                                <td class="padding-top" style="padding-top: 36px;">
+                                    <div class="p-quantity">
+                                        <a href="" class="btn-l">-</a>
+                                        <input type="text" value="1">
+                                        <a href="" class="btn-r">+</a>
+                                    </div>
+                                    <span class="warn-message">余量有限</span>
+                                </td>
+
+                                <td class="padding-top subtotal" style="padding-top: 45px;">￥398.00</td>
+
+                                <td class="padding-top operation " style="padding-top: 45px;">
+                                    <a href="" class="btn-fav1 btn-addfav">收藏</a>
+                                    <i>|</i>
+                                    <a href="">移除</a>
+                                </td>
+                            </tr>
+
+                        </tbody>
+
+
+
+                        <tbody class="choose-products-bottom">
+                            <tr>
+                                <td class="order-price">
+                                    <ul>
+                                        <li class="goods">
+                                            <span class="label"><em>商品金额：</em></span>
+
+                                            <span class="price"><i >￥398.00</i></span>
+                                        </li>
+
+                                        <li class="total">
+                                            <span class="label"><em>商品总计：</em></span>
+                                            <span class="price"><i >￥398.00</i></span>
+                                        </li>
+                                    </ul>
+                                </td>
+
+                            </tr>
+
+
+
+                            <tr class="cart-bottom-btn">
+                                <!-- 按钮 -->
+                                <td class="cart-left">
+                                    <button type="button" class="">
+                                  <span class="one"><span class="two">清空购物车</span></span>
+                                    </button>
+                                </td>
+
+                                <td class="cart-right">
+                                    <div>
+                                        <a href="" class="btn-link">
+                                            继续购物
+                                        </a>
+                                        <button type="submit" class="">
+                                            <span>下单结算</span>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

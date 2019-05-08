@@ -1,0 +1,262 @@
+@charset "utf-8";
+.footer-top {
+    width: 100%;
+    margin-top: 30px;
+    background: #f9f9f9;
+    float: left;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    div {
+        text-align: center;
+    }
+    .footer-box {
+        width: 1000px;
+        margin: 0 auto;
+        .footer-top-left {
+            width: 50%;
+            float: left;
+            img {
+                width: 70px;
+                margin-bottom: 10px;
+            }
+            .time {
+                padding: 10px 0;
+                color: #767676;
+                font-size: 14px;
+            }
+            .number {
+                text-align: center;
+                margin: 0;
+                word-spacing: 8px;
+                letter-spacing: 2px;
+                font-size: 14px;
+                color: #767676;
+                height: 24px;
+                line-height: 24px;
+                font-weight: bold;
+            }
+        }
+        .footer-top-right {
+            width: 50%;
+            float: left;
+            img {
+                width: 240px;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+
+.right-nav {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    width: 60px;
+    height: auto;
+    z-index: 9;
+    margin-top: -5%;
+    .service {
+        border-radius: 6px 0 0 0;
+        overflow: hidden;
+        height: 60px;
+        width: 100%;
+        line-height: 60px;
+        text-align: center;
+        position: relative;
+        margin-bottom: 1px;
+        .nav-background {
+            height: 60px;
+            position: absolute;
+            background: #000;
+            width: 100%;
+            top: 0;
+        }
+        img {
+            width: 100%;
+            position: relative;
+            z-index: 2;
+            box-sizing: border-box;
+            padding: 9px;
+            display: block;
+        }
+    }
+}
+
+.wechat {
+    height: 60px;
+    width: 100%;
+    line-height: 60px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 1px;
+    .nav-background {
+        height: 60px;
+        position: absolute;
+        background: #000;
+        width: 100%;
+        top: 0;
+    }
+    img {
+        width: 100%;
+        position: relative;
+        z-index: 2;
+        box-sizing: border-box;
+        padding: 9px;
+        display: block;
+    }
+    .QR {
+        position: absolute;
+        height: 186px;
+        width: 156px;
+        right: 61px;
+        top: -63px;
+        background: #333;
+        opacity: 0.9;
+        div {
+            width: 110px;
+            margin: 0 auto;
+            padding-top: 10px;
+            img {
+                width: 100%;
+                position: relative;
+                z-index: 2;
+                box-sizing: border-box;
+                padding: 9px;
+                display: block;
+            }
+        }
+        p {
+            margin: 0;
+            height: 25px;
+            line-height: 25px;
+            color: #fff;
+            font-size: 12px;
+        }
+    }
+}
+
+.up {
+    border-radius: 0 0 0 6px;
+    overflow: hidden;
+    height: 60px;
+    width: 100%;
+    line-height: 60px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 1px;
+    .nav-background {
+        height: 60px;
+        position: absolute;
+        background: #000;
+        width: 100%;
+        top: 0;
+    }
+    img {
+        width: 100%;
+        position: relative;
+        z-index: 2;
+        box-sizing: border-box;
+        padding: 9px;
+        display: block;
+    }
+}
+
+.footer-bottom {
+    width: 100% !important;
+    clear: both;
+    height: 420px;
+    background: #000;
+    .footer-fix-1 {
+        width: 900px;
+        margin: 0 auto;
+        padding-top: 60px;
+        color: #707070;
+        .footer-fix-2 {
+            padding-bottom: 40px;
+            border-bottom: 1px solid #373737;
+            height: 220px;
+        }
+    }
+}
+
+.footer-bottom-left {
+    color: #707070;
+    width: 630px;
+    height: 219px;
+    float: left;
+    .shopping-guide {
+        width: 20%;
+        float: left;
+        .big-guide {
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+        li {
+            font-size: 12px;
+            margin-bottom: 5px;
+            a {
+                color: #767676
+            }
+        }
+    }
+}
+
+.footer-bottom-rigth {
+    float: left;
+    .footer-qr-box {
+        width: 270px;
+        height: 141px;
+        .qr-l {
+            width: 50%;
+            padding: 0 20px;
+            box-sizing: border-box;
+            float: left;
+            img {
+                width: 100%;
+            }
+            .t {
+                font-size: 12px;
+                margin: 10px 0 0;
+            }
+            .b {
+                font-size: 12px
+            }
+        }
+        .qr-r {
+            width: 50%;
+            padding: 0 20px;
+            box-sizing: border-box;
+            float: left;
+            img {
+                width: 100%;
+            }
+            .t {
+                font-size: 12px;
+                margin: 10px 0 0;
+            }
+            .b {
+                font-size: 12px
+            }
+        }
+    }
+}
+
+.weibo-wrap {
+    height: 40px;
+    line-height: 40px;
+    margin-top: 20px;
+    .weibo-on {
+        width: 200px;
+        margin: 0 auto;
+        border: 1px solid #707070;
+        border-radius: 25px;
+        padding: 0 10px;
+        color: #707070;
+        text-align: center;
+        font-size: 12px
+    }
+}
+
+.footer-bootm-bootm {
+    font-size: 12px;
+}

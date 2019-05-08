@@ -1,0 +1,11 @@
+@charset "utf-8";
+@import "head";
+@import "footer";
+@import"content";
+.new-house {
+    //这是导航下面的第一张广告图
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
